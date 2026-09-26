@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · InfoTechGigs</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --accent:#1f8a3e; --accent-hover:#1a7a36; --tint:#eef8f1; --deep:#0f3d1d; --bright:#6fe39a; --ink:#1d1d1f; --muted:#6e6e73; --soft:#f5f5f7; --line:rgba(0,0,0,0.08); }
+  *,*::before,*::after { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter','Helvetica Neue',Arial,sans-serif; color:var(--ink); background:#fff; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; text-decoration:none; }
+  h1,h2,h3,p { margin:0; }
+  .wrap { max-width:1120px; margin:0 auto; }
+  .btn { display:inline-block; border:none; cursor:pointer; font-family:inherit; border-radius:980px; font-weight:600; font-size:17px; padding:14px 28px; background:var(--accent); color:#fff; transition:background .2s; }
+  .btn:hover { background:var(--accent-hover); }
+  .nav { position:sticky; top:0; z-index:20; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 32px; background:rgba(255,255,255,.88); backdrop-filter:saturate(180%) blur(20px); -webkit-backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid var(--line); }
+  .logo { display:flex; align-items:center; gap:10px; font-size:17px; font-weight:700; letter-spacing:-.01em; }
+  .mark { width:28px; height:28px; border-radius:8px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; }
+  .logo .ai { color:var(--accent); }
+  .nav-right { display:flex; gap:24px; align-items:center; font-size:14px; }
+  .nav-cta { background:var(--accent); color:#fff; padding:8px 18px; border-radius:980px; font-weight:600; }
+
+  .hero { background:linear-gradient(180deg,var(--tint) 0%,#fff 100%); padding:88px 32px 96px; }
+  .hero-grid { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); gap:64px; align-items:center; }
+  .pill { display:inline-flex; gap:8px; align-items:center; font-size:13px; font-weight:600; color:var(--accent); background:#fff; border:1px solid var(--line); padding:6px 14px; border-radius:980px; margin-bottom:24px; }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); }
+  .hero h1 { font-size:64px; line-height:1.04; font-weight:700; letter-spacing:-.035em; margin-bottom:22px; }
+  .hero h1 em { font-style:normal; color:var(--accent); }
+  .hero-sub { font-size:21px; line-height:1.5; color:var(--muted); margin-bottom:32px; max-width:560px; }
+  .hero-note { font-size:14px; color:var(--muted); margin-top:14px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:36px; }
+  .chip { font-size:13px; font-weight:500; padding:7px 14px; border-radius:980px; background:#fff; border:1px solid var(--line); }
+
+  .phone { width:320px; margin:0 auto; background:#1d1d1f; border-radius:48px; padding:12px; box-shadow:0 40px 80px rgba(0,0,0,.18); }
+  .screen { background:#fff; border-radius:38px; padding:22px 16px 26px; display:flex; flex-direction:column; gap:10px; }
+  .screen-head { text-align:center; font-size:12px; color:var(--muted); margin-bottom:6px; }
+  .screen-head strong { display:block; font-size:14px; color:var(--ink); }
+  .bubble { max-width:85%; font-size:14px; line-height:1.4; padding:11px 14px; }
+  .in { align-self:flex-start; background:#e9e9eb; border-radius:18px 18px 18px 4px; }
+  .out { align-self:flex-end; background:var(--accent); color:#fff; border-radius:18px 18px 4px 18px; }
+
+  .section { padding:112px 32px; }
+  .title { font-size:44px; font-weight:700; letter-spacing:-.025em; text-align:center; margin-bottom:14px; }
+  .lead { font-size:20px; line-height:1.5; color:var(--muted); text-align:center; max-width:640px; margin:0 auto 56px; }
+  .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+  .card { background:var(--soft); border-radius:22px; padding:36px 30px; border-top:4px solid var(--accent); }
+  .num { font-size:14px; font-weight:700; color:var(--accent); margin-bottom:18px; }
+  .card h3 { font-size:22px; font-weight:600; margin-bottom:10px; }
+  .card p { font-size:17px; line-height:1.5; color:var(--muted); }
+
+  .band { background:var(--deep); color:#fff; padding:104px 32px; }
+  .band-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; }
+  .band h2 { font-size:40px; font-weight:700; letter-spacing:-.02em; margin-bottom:56px; max-width:720px; }
+  .band h3 { font-size:19px; font-weight:600; margin-bottom:8px; color:var(--bright); }
+  .band p { font-size:16px; line-height:1.55; color:rgba(255,255,255,.72); }
+
+  .join { background:var(--soft); padding:112px 32px; }
+  .join-grid { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:64px; align-items:start; }
+  .join h2 { font-size:44px; font-weight:700; letter-spacing:-.025em; margin-bottom:16px; }
+  .join .body { font-size:19px; line-height:1.55; color:var(--muted); margin-bottom:28px; }
+  .checks { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px; }
+  .checks li { display:flex; gap:12px; font-size:17px; line-height:1.4; }
+  .checks svg { color:var(--accent); flex-shrink:0; margin-top:1px; }
+  .form { background:#fff; border-radius:26px; padding:36px; box-shadow:0 20px 50px rgba(0,0,0,.06); }
+  .form h3 { font-size:22px; font-weight:700; margin-bottom:6px; }
+  .form .fine { font-size:14px; color:var(--muted); margin-bottom:24px; }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  label.f { display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+  input[type=text],input[type=email],input[type=tel] { width:100%; font:inherit; font-size:16px; padding:12px 14px; border:1px solid #d2d2d7; border-radius:12px; margin-bottom:14px; }
+  input:focus { outline:2px solid var(--accent); outline-offset:1px; border-color:transparent; }
+  .consent { display:flex; gap:12px; align-items:flex-start; background:var(--tint); border-radius:14px; padding:16px; margin:4px 0 20px; cursor:pointer; }
+  .consent input { width:18px; height:18px; margin-top:2px; flex-shrink:0; accent-color:var(--accent); }
+  .consent strong { display:block; font-size:15px; margin-bottom:6px; }
+  .consent span span { display:block; font-size:13px; line-height:1.5; color:var(--muted); }
+  .consent a { color:var(--accent); font-weight:600; }
+  .form .btn { width:100%; }
+
+  .footer { padding:40px 32px 48px; border-top:1px solid var(--line); }
+  .foot { display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; font-size:12px; line-height:1.6; color:var(--muted); }
+  .foot-links { display:flex; gap:20px; }
+
+  @media (max-width:900px) {
+    .nav { padding:0 16px; } .hide { display:none; }
+    .hero { padding:56px 16px 72px; } .hero-grid,.join-grid { grid-template-columns:minmax(0,1fr); gap:48px; }
+    .hero h1 { font-size:44px; } .hero-sub { font-size:19px; }
+    .phone { width:280px; }
+    .section,.band,.join { padding:80px 16px; }
+    .title,.join h2 { font-size:34px; } .band h2 { font-size:32px; }
+    .cards,.band-grid { grid-template-columns:minmax(0,1fr); }
+    .form { padding:28px 20px; } .row2 { grid-template-columns:minmax(0,1fr); gap:0; }
+    .footer { padding:32px 16px 40px; }
+  }
+
+  .doc { max-width:720px; margin:0 auto; padding:72px 24px 96px; }
+  .doc .label { font-size:13px; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:.06em; margin-bottom:12px; }
+  .doc h1 { font-size:44px; font-weight:700; letter-spacing:-.025em; margin-bottom:8px; }
+  .doc .updated { font-size:14px; color:var(--muted); padding-bottom:28px; margin-bottom:12px; border-bottom:1px solid var(--line); }
+  .doc h2 { font-size:21px; font-weight:700; margin:36px 0 10px; }
+  .doc p, .doc li { font-size:16px; line-height:1.7; color:#424245; }
+  .doc p { margin-bottom:14px; }
+  .doc ul { padding-left:22px; margin:8px 0 14px; }
+  .doc a { color:var(--accent); font-weight:600; }
+  @media (max-width:900px) { .doc { padding:48px 16px 72px; } .doc h1 { font-size:34px; } }
+</style>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+  <a href="/" class="logo" aria-label="InfoTechGigs.AI home"><span class="mark">IG</span><span>InfoTechGigs<span class="ai">.AI</span></span></a>
+  <div class="nav-right"><a href="/">Home</a></div>
+</nav>
+<main class="doc">
+<div class="label">Legal</div><h1>Privacy Policy</h1><p class="updated">Last updated: September 2026</p>
+<p>InfoTechGigs, operated by Foundry Holdings Inc. DBA InfoTechGigs ("we," "us," or "our"), respects your privacy. This policy explains how we collect, use and protect your information when you use our website at infotechgigs.ai and our SMS job alert service.</p>
+<h2>Information we collect</h2>
+<ul><li>Name, email address and mobile phone number</li><li>Professional details you choose to share, such as your specialty, experience, credentials and career goals</li><li>Resumes and documents you upload</li><li>Payment information, processed securely by Stripe (we never store card numbers)</li></ul>
+<h2>How we use your information</h2>
+<ul><li>To send SMS job alerts matched to your profile</li><li>To manage your account and membership</li><li>To contact you about your account and our service</li><li>To match your profile to relevant roles from employers</li><li>To improve our service</li></ul>
+<h2>SMS communications</h2>
+<p>If you opt in, you agree to receive recurring automated SMS job alert messages from InfoTechGigs, operated by Foundry Holdings Inc. Message frequency varies. Message and data rates may apply. Consent to receive text messages is not a condition of any purchase. You can opt out at any time by replying STOP to any message. Reply HELP for help, or contact <a href="mailto:support@infotechgigs.ai">support@infotechgigs.ai</a>.</p>
+<p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</strong> Text messaging originator opt-in data and consent will not be shared with any third parties, except with the service providers that deliver our messages (such as Twilio).</p>
+<h2>Information sharing</h2>
+<p>We do not sell your personal information. We share it only:</p>
+<ul><li>With an employer, and only after you reply INTERESTED to that employer's specific role</li><li>With service providers that help us run the service (such as Stripe, Twilio, Supabase and Netlify)</li><li>When required by law or to protect our legal rights</li></ul>
+<p>Employers cannot search or browse member profiles.</p>
+<h2>Data security</h2>
+<p>We use industry-standard safeguards to protect your information. Resumes are stored privately and are never public.</p>
+<h2>Your choices</h2>
+<p>You can access, update or delete your information at any time. To request deletion, email <a href="mailto:support@infotechgigs.ai">support@infotechgigs.ai</a>.</p>
+<h2>Contact us</h2>
+<p>Questions about this policy? Email <a href="mailto:support@infotechgigs.ai">support@infotechgigs.ai</a>.</p></main>
+<footer class="footer">
+  <div class="wrap foot">
+    <div>SMS job alerts: message frequency varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase.<br>&copy; 2026 Foundry Holdings Inc. DBA InfoTechGigs. All rights reserved.</div>
+    <div class="foot-links"><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="mailto:support@infotechgigs.ai">Contact</a></div>
+  </div>
+</footer>
+</body>
+</html>
